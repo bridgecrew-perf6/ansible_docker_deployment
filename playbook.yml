@@ -2,5 +2,6 @@
   hosts: localhost
   gather_facts: no
   tasks:
-    - docker_compose:
-            - docker-compose.yml
+    - name: docker compose with ansible 
+      docker_compose:
+        - docker-compose.yml
