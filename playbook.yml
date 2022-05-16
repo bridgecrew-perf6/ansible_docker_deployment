@@ -1,0 +1,6 @@
+- name: Wordpress_mysql_deployment
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - docker_compose:
+            - docker-compose.yml
