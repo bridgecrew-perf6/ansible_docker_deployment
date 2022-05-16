@@ -1,6 +1,6 @@
 - name: Wordpress_mysql_deployment
   hosts: localhost
-  gather_facts: no
+  become: true
   tasks:
     - name: docker compose with ansible 
       docker_compose:
